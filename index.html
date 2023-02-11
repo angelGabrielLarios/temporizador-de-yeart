@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>
+        countdown listo
+    </title>
+</head>
+<body>
+    <div class="reloj">
+        <form action="" class="form" id="form">
+            <label for="fechaCumple" class="form__label">Ingresa tu fecha de cumpleaños: </label>
+            <input type="datetime-local" name="fechaCumple" id="fechaCumple" class="form__input">
+        </form>
+        <div class="btns" id="btns">
+            <button class="btn btn--iniciar" id="btnIniciar">
+                <i class="fa-solid fa-play btn__ico"></i>Iniciar
+            </button>
+            <button class="btn btn--parar btn--disabled" id="btnParar" disabled>
+                <i class="fa-solid fa-stop btn__ico"></i>Parar
+            </button>
+        </div>
+        <h2 class="reloj__title" id="relojTitle1">
+            Faltan:
+        </h2>
+
+        <div class="reloj__celdas">
+            <div class="reloj__celda">
+                <div class="reloj__numero" id="dias">0</div>
+                <div class="reloj__texto">dias</div>
+            </div>
+            <div class="reloj__dos-puntos">:</div>
+
+            <div class="reloj__celda">
+                <div class="reloj__numero" id="horas">00</div>
+                <div class="reloj__texto">horas</div>
+            </div>
+
+            <div class="reloj__dos-puntos">:</div>
+
+            <div class="reloj__celda">
+                <div class="reloj__numero" id="minutos">00</div>
+                <div class="reloj__texto">minutos</div>
+            </div>
+
+            <div class="reloj__dos-puntos">:</div>
+
+            <div class="reloj__celda">
+                <div class="reloj__numero" id="segundos">00</div>
+                <div class="reloj__texto">segundos</div>
+            </div>
+        </div>
+        <h2 class="reloj__title" id="relojTitle2">
+            Para tu cumpleaños
+        </h2>
+
+        <h2 class="reloj__title reloj__title--felicitacion" id="felicitacion">
+            
+        </h2>
+    </div>
+    <script src="js/countdown_2.js"></script>
+</body>
+
+</html>
